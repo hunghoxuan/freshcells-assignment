@@ -48,6 +48,10 @@ Runs unit tests coverages.
 
 ##### `npm run build`
 
-Builds the app for production to the `build` folder.\
-
+```
+npm run build
+npm install -g serve
+serve -s build
+```
+Builds the app for production to the `build` folder and run build using serve -s build command.
 
