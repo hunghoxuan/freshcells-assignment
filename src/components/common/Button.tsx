@@ -4,6 +4,7 @@ export default function Button({
   onSubmit = (e: any) => e.preventDefault(),
   type = 'submit',
   style = 'primary',
+  title = '',
   text = '',
   id = '',
 }) {
@@ -24,6 +25,7 @@ export default function Button({
         }
         onSubmit={onSubmit}
         onClick={onClick}
+        title={title || text}
       >
         {text}
       </button>

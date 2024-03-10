@@ -61,6 +61,7 @@ const Login = () => {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        autoFocus
       />
       <Input
         label={t('password')}

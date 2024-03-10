@@ -7,12 +7,14 @@ export default function Input({
   label = '',
   labelFor = '',
   id = '',
+  title = '',
   name = '',
   type = 'text',
   isRequired = false,
   placeholder = '',
   customClass = '',
   readOnly = false,
+  autoFocus = false,
 }) {
   return (
     <div className="my-10">
@@ -34,7 +36,9 @@ export default function Input({
           fixedInputClass + customClass + (readOnly ? ' bg-gray-100' : '')
         }
         placeholder={placeholder || label}
+        title={title || label}
         readOnly={readOnly}
+        autoFocus={autoFocus}
       />
     </div>
   )

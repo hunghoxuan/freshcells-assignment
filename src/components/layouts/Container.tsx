@@ -1,13 +1,12 @@
 import React, { ReactNode } from 'react'
 
 interface ContainerProps {
-  rightImageUrl?: string
   children: ReactNode
 }
 
-const Container: React.FC<ContainerProps> = ({ children, rightImageUrl }) => {
+const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">{children}</div>
+    <main className="flex flex-col md:flex-row min-h-screen">{children}</main>
   )
 }
 
