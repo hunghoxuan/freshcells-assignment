@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { CONFIGS } from '../config/constants'
-import { ContainerTwoSides } from './layouts/Index'
-import Login from './auth/Login'
+import { ContainerTwoSides } from '../components/layouts/Index'
+import Login from '../components/auth/Login'
 
-const LoginScreen = () => {
+const LoginPage = () => {
   return (
     <>
       <ContainerTwoSides
@@ -23,4 +23,4 @@ const LoginScreen = () => {
   )
 }
 
-export default LoginScreen
+export default LoginPage

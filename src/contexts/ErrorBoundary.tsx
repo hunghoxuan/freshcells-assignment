@@ -1,5 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react'
-import ErrorPage from '../components/ErrorPage'
+import ErrorPage from '../pages/ErrorPage'
 
 // Define a type for the props
 interface ErrorBoundaryProps {

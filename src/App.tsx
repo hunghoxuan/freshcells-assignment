@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import AccountScreen from './components/AccountScreen'
-import LoginScreen from './components/LoginScreen'
+import AccountPage from './pages/AccountPage'
+import LoginPage from './pages/LoginPage'
 import ProtectedRoute from './components/layouts/ProtectedRoute'
 import Layout from './components/layouts/Layout'
 import { ROUTES } from './config/constants'
@@ -11,9 +11,9 @@ export const App = () => (
     <ErrorBoundary>
       <Routes>
         <Route element={<ProtectedRoute />}>
-          <Route path={ROUTES.ACCOUNT} element={<AccountScreen />} />
+          <Route path={ROUTES.ACCOUNT} element={<AccountPage />} />
         </Route>
-        <Route path={ROUTES.LOGIN} element={<LoginScreen />} />
+        <Route path={ROUTES.LOGIN} element={<LoginPage />} />
         <Route
           path={ROUTES.NOT_FOUND}
           element={<Navigate to={ROUTES.LOGIN} replace />}
