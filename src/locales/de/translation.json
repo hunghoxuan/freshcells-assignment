@@ -1,0 +1,11 @@
+{
+  "login": "Anmelden",
+  "email": "E-Mail",
+  "password": "Passwort",
+  "logout": "Abmelden",
+  "accountDetails": "Kontodetails",
+  "firstName": "Vorname",
+  "lastName": "Nachname",
+  "invalidUser": "Der eingegebene Benutzername oder das Passwort wurde nicht gefunden oder ist falsch. Bitte versuchen Sie es erneut.",
+  "invalidLoginInput": "Bitte geben Sie eine gültige E-Mail-Adresse und ein Passwort ein."
+}
