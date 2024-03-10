@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({
   showBorder = true,
 }) => {
   const className = showBorder
-    ? 'border border-gray-200 rounded-lg shadow-sm overflow-hidden p-4 py-10'
+    ? 'border border-gray-200 rounded-lg shadow-sm overflow-hidden p-6 py-10'
     : 'p-4 py-10'
 
   return (

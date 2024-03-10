@@ -16,11 +16,13 @@ const resources = {
   },
 }
 
+const currentLanguage = localStorage.getItem('language') || CONFIGS.language
+
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: CONFIGS.language, // language to use
+    lng: currentLanguage, // language to use
     keySeparator: false, // we do not use keys in form messages.welcome
     interpolation: {
       escapeValue: false, // react already safes from xss
