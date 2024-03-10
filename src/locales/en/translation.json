@@ -1,0 +1,11 @@
+{
+  "login": "Login",
+  "email": "Email",
+  "password": "Password",
+  "logout": "Logout",
+  "accountDetails": "Account Details",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "invalidUser": "The user is not found or username or password is incorrect. Please try again.",
+  "invalidLoginInput": "Please enter valid email and password."
+}
