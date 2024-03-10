@@ -1,6 +1,3 @@
-const fixedInputClass =
-  'rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm'
-
 export default function Input({
   onChange = (e: any) => {},
   value = '',
@@ -20,7 +17,7 @@ export default function Input({
     <div className="my-10">
       <label
         htmlFor={labelFor}
-        className="block text-sm font-medium text-gray-700 mb-1"
+        className="label"
       >
         {label}
       </label>
@@ -33,7 +30,7 @@ export default function Input({
         type={type}
         required={isRequired}
         className={
-          fixedInputClass + customClass + (readOnly ? ' bg-gray-100' : '')
+          'input' + customClass + (readOnly ? ' disabled' : '')
         }
         placeholder={placeholder || label}
         title={title || label}

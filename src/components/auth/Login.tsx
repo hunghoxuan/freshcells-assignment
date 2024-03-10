@@ -78,7 +78,7 @@ const Login = () => {
       <hr />
       <Button
         text={t('login') + ' AS DEMO'}
-        style="secondary"
+        className="btn-secondary"
         onClick={loginAsDemo}
       />
     </Card>

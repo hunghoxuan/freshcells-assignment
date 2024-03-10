@@ -13,12 +13,12 @@ const Card: React.FC<CardProps> = ({
   showBorder = true,
 }) => {
   const className = showBorder
-    ? 'border border-gray-200 rounded-lg shadow-sm overflow-hidden p-6 py-10'
-    : 'p-4 py-10'
+    ? 'card-padding card-border'
+    : 'card-padding'
 
   return (
     <div className={className}>
-      {title && <div className="text-2xl font-bold text-gray-800">{title}</div>}
+      {title && <div className="card-title">{title}</div>}
       <div>{children}</div>
     </div>
   )
