@@ -9,6 +9,7 @@ const LoginScreen = () => {
       <ContainerTwoSides
         left={<Login />}
         right={
+          CONFIGS.backgroundImage &&
           <>
             <img
               src={CONFIGS.backgroundImage}

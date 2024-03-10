@@ -10,7 +10,7 @@ export const CONFIGS = {
   language: process.env.REACT_APP_LANGUAGE || 'en',
   footerText:
     process.env.REACT_APP_FOOTER_TEXT || '© 2024 All Rights Reserved.',
-  backgroundImage: process.env.REACT_APP_BACKGROUND_IMAGE || 'bg-black',
+  backgroundImage: process.env.REACT_APP_BACKGROUND_IMAGE,
 }
 
 export const GRAPHQL_SERVER =

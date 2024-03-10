@@ -21,12 +21,12 @@ Run the follow three commands to clone this repo and install its dependencies:
 ```
 git clone https://github.com/hunghoxuan/freshcells-assignment.git
 cd freshcells-assignment
-npm i && npm start
+npm i && cp .env.sample .env && npm start
 ```
 
-#### Create a `.env` file
+#### Update environment variables `.env` file
 
-You can configure these values locally by copying the `.env.sample` file to a new file called `.env` and filling out the values.
+You should manually configure environment variables by editing `.env`. Copy `.env.sample` to `.env` if file not exists.
 
 ## SCRIPTS
 
