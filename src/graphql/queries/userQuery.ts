@@ -1,7 +1,20 @@
-import { gql } from '@apollo/client'
+import { gql, TypedDocumentNode } from '@apollo/client'
 import { useQuery } from '@apollo/client'
 
-export const GET_USER_QUERY = gql`
+interface GetUserQueryData {
+   user: {
+      id: number
+      email: string
+      firstName: string
+      lastName: string
+   }
+}
+
+interface GetUserQueryVariables {
+   id: number
+}
+
+export const GET_USER_QUERY: TypedDocumentNode<GetUserQueryData, GetUserQueryVariables> = gql`
   query user($id: ID!) {
     user(id: $id) {
       id

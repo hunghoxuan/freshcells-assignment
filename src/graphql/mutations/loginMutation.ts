@@ -1,5 +1,21 @@
-import { gql } from '@apollo/client'
+import { gql, TypedDocumentNode } from '@apollo/client'
 import { useMutation } from '@apollo/client'
+
+interface LoginMutationData {
+  login?: {
+    jwt: string
+    user: {
+      id: number
+      email: string
+      username: string
+    }
+  }
+}
+
+interface LoginMutationVariables {
+  email: string
+  password: string
+}
 
 export const LOGIN_MUTATION = gql`
   mutation Login($email: String!, $password: String!) {
@@ -15,7 +31,7 @@ export const LOGIN_MUTATION = gql`
 `
 
 export const useLoginMutation = () => {
-  const [mutate, { data, loading, error }] = useMutation(LOGIN_MUTATION)
+  const [mutate, { data, loading, error }] = useMutation<LoginMutationData, LoginMutationVariables> (LOGIN_MUTATION)
 
   const login = async (email: string, password: string) => {
     return mutate({ variables: { email, password } })

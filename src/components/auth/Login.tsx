@@ -45,6 +45,8 @@ const Login = () => {
     try {
       setLoading(true)
       const { data } = await login(email, password)
+      if (!data || !data.login) throw new Error(t('invalidUser'));
+      
       setAuth(JSON.stringify(data.login))
       navigate(ROUTES.ACCOUNT) // Navigate to account page on success
     } catch (e: any) {
